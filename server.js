@@ -18,6 +18,9 @@ app.use(cors())
 // try, catch 
 // environment variables
 
+app.get('/',(req,res)=>{
+	res.send('hello world')
+})
 
 app.use('/user',userRoutes)
 app.use('/todo',todoRoutes)
